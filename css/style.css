@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afacad Flux';
+}
+
+:root {
+    --primary-color: #511F50;
+}
+
+.container {
+    background-image: url("../img/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+}
+
+.content {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.top-content .title {
+    width: calc(40% - 30px);
+}
+
+.title h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 26px;
+    line-height: 0.9;
+}
+
+.title p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.top-content .rates {
+    width: calc(48% - 30px);
+}
+
+.rates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rates .rate {
+    background-color: #F7F2F8;
+    height: 22%;
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px 30px 15px 30px;
+}
+
+.rates .center {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rates .end {
+    margin-left: auto;
+}
+
+.rate p {
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+
+.bottom-content {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-content .box {
+    height: 82%;
+    background-color: var(--primary-color);
+    width: calc(32% - 5px);
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.bottom-content .box-2 {
+    margin: auto;
+}
+
+.bottom-content .box-3 {
+    margin-top: auto;
+}
+
+.box .info {
+    display: flex;
+    align-items: center;
+}
+
+.box img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.box h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.box h5 {
+    color: mediumvioletred;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.box article {
+    margin-top: 25px;
+    height: 60%;
+}
+
+.box article p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top-content .title {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .top-content .title h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .top-content .title p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .top-content .rates {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .rates .rate {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        padding: 25px;
+    }
+
+    .bottom-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .bottom-content .box {
+        width: 100%;
+        height: 100%;
+    }
+}
